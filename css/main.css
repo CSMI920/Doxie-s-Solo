@@ -1,1 +1,120 @@
 /* Place CSS styles here */
+body{
+    background-color: #f5f1e9;
+
+    font-family: "josefin-slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(18, 6, 0);
+}
+.red{
+    background-color: #832727;
+}
+.cursive{
+color: #832727;
+font-family: "allegretto", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px;
+margin: 4px 0 -14px 0px;}
+
+.event-head{
+font-size: 30px;
+color: #f5f1e9;
+margin: -19px 0 10px;
+}
+
+.head-wrapper{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    margin: auto;
+    padding: 44px 0;
+    width: 80%;
+}
+
+
+
+.button{
+    font-family: "josefin-slab", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    align-items: center;
+    background-color: #7c9190;
+    border-radius: 4px;
+    transition: box-shadow 0.15s ease, transform 0.15s ease, padding 0.25s ease;
+    border: none;
+    padding: 12px 40px;
+    color: white;
+}
+.button:hover {
+      padding: 12px 50px;
+}
+
+.event-button{
+    background-color: #561919;
+}
+
+.title-img {
+    max-width: 50%;
+}
+
+
+.event-button{
+    display: flex;
+    margin: auto;
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  padding: 80px 0 0 0 ;
+  width: 80%;
+}
+
+.slideshow img {
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.slideshow button {
+    padding: 12px 20px;
+    background-color: rgba(2, 1, 1, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 30px;
+    transition-duration: 0.4s;
+
+}
+.slideshow button:hover {
+  background-color: #561919;
+}
+
+#slide {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out,
+              opacity 0.5s ease-in-out;
+}
+#slide.slide-out-left {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+#slide.slide-out-right {
+  transform: translateX(30px);
+  opacity: 0;
+}
