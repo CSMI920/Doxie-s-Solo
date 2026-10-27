@@ -1,4 +1,4 @@
-/* Place CSS styles here */
+
 body{
     background-color: #f5f1e9;
 
@@ -10,6 +10,14 @@ body{
 .red{
     background-color: #832727;
 }
+
+/* images */
+.img1 {
+    max-width: 50%;}
+.img2{
+    max-width: 100%;}
+
+/* texts */
 .cursive{
 color: #832727;
 font-family: "allegretto", sans-serif;
@@ -17,14 +25,13 @@ font-weight: 400;
 font-style: normal;
 font-size: 80px;
 margin: 4px 0 -14px 0px;}
-
 .event-head{
 font-size: 30px;
 color: #f5f1e9;
-margin: -19px 0 10px;
-}
+margin: -19px 0 10px;}
 
-.head-wrapper{
+/* wrappers */
+.colm{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -34,9 +41,16 @@ margin: -19px 0 10px;
     gap: 10px;
     margin: auto;
     padding: 44px 0;
-    width: 80%;
-}
+    width: 80%;}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 40%;
+    padding: 0 100px;
+    gap: 20px;}
 
+/* buttons */
 
 
 .button{
@@ -50,21 +64,13 @@ margin: -19px 0 10px;
     transition: box-shadow 0.15s ease, transform 0.15s ease, padding 0.25s ease;
     border: none;
     padding: 12px 40px;
-    color: white;
-}
+    color: white;}
 .button:hover {
-      padding: 12px 50px;
-}
+      padding: 12px 50px;}
 
 .event-button{
     background-color: #561919;
 }
-
-.title-img {
-    max-width: 50%;
-}
-
-
 .event-button{
     display: flex;
     margin: auto;
@@ -118,3 +124,4 @@ margin: -19px 0 10px;
   transform: translateX(30px);
   opacity: 0;
 }
+

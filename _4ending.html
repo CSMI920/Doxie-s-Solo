@@ -25,14 +25,19 @@
 
 <body>
 
-Prologue
-<img class="title-img" src="./img/sad doxie.png" alt="">
+  <div class="player-container">
+    <h1 class="cursive event-head">Doxie's Song Player!</h1>
 
-<div>
-  <a href="Event.html">
-    <button class="button"> Start </button>
-  </a>
-</div>
+    <p>Your selected song is ready to play!</p>
+
+    <audio id="audio" controls preload="auto">
+      Your browser does not support audio playback.
+    </audio>
+
+    <a href="./_3options.html" class="button event-button">
+      BACK TO SONG CHOICES
+    </a>
+  </div>
 
 
 <script src="./js/main.js"></script>

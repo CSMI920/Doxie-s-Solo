@@ -19,7 +19,7 @@ const songs = [
 ];
 
 // Destination page
-const SONG_PAGE = "./Conclustion.html";
+const SONG_PAGE = "./_4ending.html";
 
 // Slideshow state
 let currentIndex = 0;
