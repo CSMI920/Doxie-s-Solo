@@ -80,7 +80,14 @@ margin: 4px 0 -14px 0px;}
 .center{
     display: flex;
     justify-content: center;}
+.ending-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 100px;}
 
+    
         /* buttons */
 .button{
     font-family: "josefin-slab", serif;
@@ -123,25 +130,63 @@ margin: 4px 0 -14px 0px;}
 
 
         /* animations */
-#slide {
-  transform: translateX(0);
-  opacity: 1;
-  transition: transform 0.5s ease-in-out,
-              opacity 0.5s ease-in-out;}
-#slide.slide-out-left {
-  transform: translateX(-30px);
-  opacity: 0;}
-#slide.slide-out-right {
-  transform: translateX(30px);
-  opacity: 0;}
-
 .cursor {
   display: inline-block;
-  animation: blink 0.7s steps(1) infinite;
-}
-
+  animation: blink 0.7s steps(1) infinite;}
 @keyframes blink {
   50% {
-    opacity: 0;
+    opacity: 0; }}
+
+
+.scene {
+  position: relative;
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
+}
+
+/* Green rectangle slides in behind the ball */
+.rectangle {
+  position: absolute;
+  width: 400px;
+  height: 30px;
+  object-fit: fill;
+
+  left: -400px;
+  top: 60px;
+  z-index: 1;
+
+  animation: slideIn 1.2s ease-out 2s forwards;
+}
+
+/* Ball image */
+.ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+
+  left: 30px;
+  top: 30px;
+  z-index: 2;
+
+  animation: bounce 0.6s ease-in-out 0s 4 forwards;
+}
+
+/* Ball bounces up and down */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Rectangle slides in from the left */
+@keyframes slideIn {
+  to {
+    left: 0;
   }
 }
