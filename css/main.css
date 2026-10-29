@@ -5,12 +5,12 @@ body{
     font-family: "josefin-slab", serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(18, 6, 0);
-}
+    color: #120600;}
 .red{
     background-color: #832727;}
 .white{
     color: #f5f1e9;}
+
 
         /* images */
 .img1 {
@@ -25,6 +25,7 @@ body{
     transition: opacity 0.3s ease;
     filter: drop-shadow(0 0 3px rgb(0, 0, 0));}
 
+
         /* texts */
 .cursive{
 color: #832727;
@@ -38,8 +39,13 @@ margin: 4px 0 -14px 0px;}
     font-size: 30px;
     margin-bottom: 30px;}
 .dialouge{
+    text-align: center;
     margin: 50px;
     font-size: 25px;}
+.resize{
+    font-size: 32px;
+    padding: 18px 0;
+    text-align: center;}
 
 
         /* wrappers */
@@ -71,8 +77,9 @@ margin: 4px 0 -14px 0px;}
     margin: auto;
     padding: 80px 0 0 0 ;
     width: 80%;}
-
-
+.center{
+    display: flex;
+    justify-content: center;}
 
         /* buttons */
 .button{
@@ -105,6 +112,15 @@ margin: 4px 0 -14px 0px;}
 .slideshow button:hover {
   background-color: #561919;}
 
+.no-yes{
+    background-color: #e1a94a;
+    opacity: 0;
+    visibility: hidden;
+    transition: box-shadow 0.15s ease, transform 0.15s ease, padding 0.25s ease;}
+.no-yes.show {
+  opacity: 1;
+  visibility: visible;}
+
 
         /* animations */
 #slide {
@@ -119,3 +135,13 @@ margin: 4px 0 -14px 0px;}
   transform: translateX(30px);
   opacity: 0;}
 
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
